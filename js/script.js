@@ -1,7 +1,7 @@
 let saldoTotal =  234.27
 let sumaProductos = parseInt(prompt("La suma de los productos es: "))
 let entrada = parseInt(prompt("Valor dado por el cliente"))
-//let caja =[]
+
 const nuevoSaldoTotal = () => {
    if (entrada > sumaProductos) {
     saldoTotal = saldoTotal + entrada
@@ -11,6 +11,7 @@ const nuevoSaldoTotal = () => {
     alert("No se necesita cambio")
    }return saldoTotal
 }
+
 const saldoCaja = () =>{
    const caja = [{
         billetes500: 0,
@@ -30,4 +31,18 @@ const saldoCaja = () =>{
         monedas01: 1
     }];
     return caja
+}
+
+const introducirBilletes = (saldoCaja) => {
+   do {
+      let billetes = "billetes" + prompt("¿Que billetes te ha dado el cliente? Introduce 0 si es ninguno")
+      saldoCaja.find(index => index.billetes ++)
+   } while (billetes == 0);
+}
+
+const introducirMonedas = (saldoCaja) => {
+   do {
+      let monedas = "monedas" + prompt("¿Que monedas te ha dado el cliente? Introduce 0 si es ninguno")
+      saldoCaja.find(index => index.monedas ++)
+   } while (monedas == 0);
 }
