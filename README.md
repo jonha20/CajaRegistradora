@@ -40,6 +40,7 @@ Al hacer clic en un botón en la página, se ejecuta un script que:
 ├── index.html             <-- Contiene el botón que inicia el proceso
 └── 📁 js/
     └── script.js          <-- Contiene toda la lógica de la caja registradora
+```
 
 ## 🌐 Ver online
 
