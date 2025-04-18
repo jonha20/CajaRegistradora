@@ -46,4 +46,4 @@ Al hacer clic en un botón en la página, se ejecuta un script que:
 
 Puedes probar la caja registradora directamente desde aquí:
 
-👉 https://jonha20.github.io/Caja-Registradora/index.html
+👉 https://jonha20.github.io/CajaRegistradora/index.html
